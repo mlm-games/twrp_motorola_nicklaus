@@ -14,8 +14,16 @@
 # limitations under the License.
 #
 
+# Doesnt work for pbrp
+## $(call inherit-product, vendor/omni/config/common.mk)
 
-$(call inherit-product, vendor/omni/config/common.mk)
+
+# Inherit from the common Omni configuration, if it exists
+-include $(call if-exists,vendor/omni/config/common.mk)
+
+# Inherit from the common PBRP configuration, if it exists
+-include $(call if-exists,vendor/pbrp/config/common.mk)
+
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
