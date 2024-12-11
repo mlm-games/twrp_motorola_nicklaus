@@ -17,3 +17,5 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_nicklaus.mk
 
+COMMON_LUNCH_CHOICES := \
+    omni_nicklaus-eng
