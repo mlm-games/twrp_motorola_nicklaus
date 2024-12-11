@@ -35,13 +35,13 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Kernel
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/zImage-dtb
 # BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 # TARGET_KERNEL_SOURCE := kernel/motorola/nicklaus
 # TARGET_KERNEL_CONFIG := nicklaus_defconfig
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2 androidboot.selinux=permissive
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/zImage-dtb
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0xE000000
 # KERNEL_TOOLCHAIN_PREFIX := arm-linux-androidkernel-
 
