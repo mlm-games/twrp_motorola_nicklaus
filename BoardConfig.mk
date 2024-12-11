@@ -61,6 +61,10 @@ TW_NO_SCREEN_BLANK := true
 TW_INCLUDE_FUSE_EXFAT := true # exFAT FS Support
 TW_INCLUDE_FUSE_NTFS := true  # NTFS Support
 TW_INCLUDE_NTFS_3G := true
+TW_EXCLUDE_SUPERSU := true
+TW_EXCLUDE_LPDUMP := true
+TW_EXCLUDE_LPTOOLS := true
+TW_EXCLUDE_NANO := true
 
 # Auto configures these
 #TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
