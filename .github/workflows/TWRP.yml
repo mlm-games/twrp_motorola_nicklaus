@@ -74,13 +74,12 @@ jobs:
             ${{ env.OUTPUT_DIR }}/*.tar
             ${{ env.OUTPUT_DIR }}/*vbmeta*
             ${{ env.OUTPUT_DIR }}/ramdisk-recovery.*
-          name: Unofficial ${{ github.workflow }} for ${{ env.DEVICE_NAME }} // ${{ format('yyyyMMdd', github.event.head_commit.timestamp) }}
+          name: ${{ github.workflow }} for ${{ env.DEVICE_NAME }} // ${{ format('yyyyMMdd', github.event.head_commit.timestamp) }}
           tag_name: ${{ github.run_id }}
           body: |
             Build: ${{ env.BRANCH_NAME }}
             Device: [Device Tree/Branch](${{ env.DEVICE_TREE }}/tree/${{ env.BRANCH_NAME }})
             Commit: Most recent [commit](${{ github.server_url }}/${{ github.repository }}/commit/$(git rev-parse --short HEAD)) during building.
             MD5 (img): ${{ env.MD5_IMG }}
-            MD5 (zip): ${{ env.MD5_ZIP }}
           prerelease: ${{ env.MARK_PRERELEASE }}
         continue-on-error: true
