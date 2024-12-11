@@ -54,7 +54,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # TWRP
 TW_THEME := portrait_hdpi
 TW_DEVICE_VERSION := 1_stable
-# TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO := true
 TW_ALWAYS_RMRF := true
 TW_INCLUDE_FB2PNG := true
 TW_NO_SCREEN_BLANK := true
@@ -62,12 +62,12 @@ TW_INCLUDE_FUSE_EXFAT := true # exFAT FS Support
 TW_INCLUDE_FUSE_NTFS := true  # NTFS Support
 TW_INCLUDE_NTFS_3G := true
 TW_EXCLUDE_SUPERSU := true
-TW_EXCLUDE_LPDUMP := true
-TW_EXCLUDE_LPTOOLS := true
-TW_EXCLUDE_NANO := true
-TW_EXCLUDE_BASH := true
-TW_EXCLUDE_PYTHON := true
-TW_EXCLUDE_TWRPAPP := true
+# TW_EXCLUDE_LPDUMP := true
+# TW_EXCLUDE_LPTOOLS := true
+# TW_EXCLUDE_NANO := true
+# TW_EXCLUDE_BASH := true
+# TW_EXCLUDE_PYTHON := true
+# TW_EXCLUDE_TWRPAPP := true
 
 # Auto configures these
 #TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
